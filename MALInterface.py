@@ -3,7 +3,7 @@ from requests.auth import HTTPBasicAuth
 
 class malInterface(object):
 
-    prefix_url = "http://myanimelist.net/api/anime|manga/search.xml?q="
+    prefix_url = "http://myanimelist.net/api/anime/search.xml?q="
 
     def __init__(self, username, password):
         self.auth = HTTPBasicAuth(username, password) #user authentication
